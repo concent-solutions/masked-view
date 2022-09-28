@@ -1,6 +1,6 @@
 // @flow
 import { type Node, type Element } from 'react';
-import { type ViewProps } from 'react-native/Libraries/Components/View/ViewPropTypes';
+import type {ViewPropTypes as ViewProps} from 'deprecated-react-native-prop-types';
 
 export type MaskedViewProps = $Shape<ViewProps> &
   $ReadOnly<{|

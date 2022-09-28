@@ -2,8 +2,10 @@
 
 import * as React from 'react';
 import * as ReactNative from 'react-native';
+import type {ViewPropTypes as ViewProps} from 'deprecated-react-native-prop-types';
 
-interface MaskedViewProps extends ReactNative.ViewProps {
+
+interface MaskedViewProps extends ViewProps {
   maskElement: React.ReactElement;
   androidRenderingMode?: 'software' | 'hardware';
 }
